@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Resume</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Header / Personal Details */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .header .info {
+            max-width: 600px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 20px;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item span {
+            font-weight: bold;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Contact */
+        .contact p {
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Personal Details -->
+    <div class="header">
+        <div class="info">
+            <h1>Hasan Khan</h1>
+            <p class="title">Web Developer / Student</p>
+            <p>
+                Motivated individual with an interest in web development and
+                modern technologies. Passionate about learning and building
+                clean, user-friendly websites.
+            </p>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <p>
+                <span>Bachelor of Engineering in Computer Engg</span><br>
+                Mumbai University, 2024 – 2028
+            </p>
+        </div>
+        <div class="education-item">
+            <p>
+                <span>High School Diploma</span><br>
+                St. Xaviers High School, 2012 – 2022
+            </p>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="section contact">
+        <h2>Contact Information</h2>
+        <p>Email: hasankhan@gmail.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Location: Mumbai, India</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2026 Resume Page
+    </div>
+</div>
+
+</body>
+</html>
