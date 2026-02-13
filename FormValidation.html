@@ -134,9 +134,10 @@
       const confirmMsg = document.getElementById("confirmMsg");
 
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const namePattern = /^[A-Za-z\s]+$/;
       let valid = true;
 
-      if (name.value.trim() === "") {
+      if (!namePattern.test(name.value)) {
         name.className = "error";
         nameMsg.className = "msg error";
         nameMsg.innerText = "Name is required";
