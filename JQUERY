@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gadget Store</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+
+    .card {
+      width: 320px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px lightgray;
+    }
+
+    img {
+      width: 220px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 14px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Gadget Store Showcase</h2>
+
+<div class="card">
+  <img id="itemImg" src="default.jpg">
+  <h3 id="itemName">Select a Product</h3>
+  <p id="itemPrice">Price: ₹0</p>
+
+  <button onclick="showWatch()">Smart Watch</button>
+  <button onclick="showTablet()">Tablet</button>
+  <button onclick="showCamera()">Camera</button>
+
+  <br><br>
+
+  <button id="fadeBtn">Fade Out</button>
+  <button id="slideBtn">Slide Toggle</button>
+  <button id="zoomBtn">Zoom</button>
+</div>
+
+<script>
+
+function showWatch() {
+  document.getElementById("itemName").innerText = "Smart Watch";
+  document.getElementById("itemPrice").innerText = "Price: ₹12,000";
+  document.getElementById("itemImg").src = "SmartWatch.jpg";
+}
+
+function showTablet() {
+  document.getElementById("itemName").innerText = "Tablet";
+  document.getElementById("itemPrice").innerText = "Price: ₹35,000";
+  document.getElementById("itemImg").src = "Tablet.jpg";
+}
+
+function showCamera() {
+  document.getElementById("itemName").innerText = "Camera";
+  document.getElementById("itemPrice").innerText = "Price: ₹55,000";
+  document.getElementById("itemImg").src = "Camera.jpg";
+}
+
+$(document).ready(function(){
+
+  $("#fadeBtn").click(function(){
+    $("#itemImg").fadeToggle();
+  });
+
+  $("#slideBtn").click(function(){
+    $("#itemImg").slideToggle();
+  });
+
+  $("#zoomBtn").click(function(){
+    $("#itemImg").animate({
+      width: "280px",
+      height: "240px"
+    }, 600);
+  });
+
+});
+
+</script>
+
+</body>
+</html>
